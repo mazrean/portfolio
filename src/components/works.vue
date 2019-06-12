@@ -27,6 +27,14 @@
             >
           </v-layout>
         </li>
+        <li>
+          <v-layout column>
+            <v-layout
+              ><a href="https://mazrean.github.io/">旧portfolio</a></v-layout
+            >
+            <v-layout>以前のポートフォリオ(2019/5/9作成)。</v-layout>
+          </v-layout>
+        </li>
       </ul>
     </v-layout>
   </v-container>
