@@ -1,28 +1,55 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-app>
+    <v-toolbar class="green accent-3">
+      <v-layout justify-center>
+        <v-toolbar-title class="headline white--text">
+          Mazrean`s Portfolio
+        </v-toolbar-title>
+      </v-layout>
+      <v-menu bottom origin="center center" transition="scale-transition">
+        <template v-slot:activator="{ on }">
+          <v-btn depressed color="green accent-3" v-on="on">
+            <v-icon color="white">menu</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-tile
+            v-for="item in items"
+            :key="item.title"
+            @click="item.change"
+          >
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+    <v-content class="green accent-1">
+      <router-view />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "app",
-  components: {
-    HelloWorld
+  data() {
+    return {
+      items: [
+        {
+          title: "Top",
+          change: () => {
+            this.$router.push("/");
+          }
+        },
+        {
+          title: "Works",
+          change: () => {
+            this.$router.push("/works");
+          }
+        }
+      ]
+    };
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
