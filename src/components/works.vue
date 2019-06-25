@@ -35,6 +35,18 @@
             <v-layout>以前のポートフォリオ(2019/5/9作成)。</v-layout>
           </v-layout>
         </li>
+        <li>
+          <v-layout column>
+            <v-layout
+              ><a href="http://lecture-realtime-template.mazrean.trap.show/"
+                >簡易オンラインゲーム
+              </a></v-layout
+            >
+            <v-layout
+              >traPのリアルタイム通信講習会で作ったオンラインゲーム。ゲーム部分はほとんどできていた状態にsocket.ioによる通信機能、それに伴う生き死にの同期機能を追加した。</v-layout
+            >
+          </v-layout>
+        </li>
       </ul>
     </v-layout>
   </v-container>
