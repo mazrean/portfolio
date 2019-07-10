@@ -47,6 +47,22 @@
             >
           </v-layout>
         </li>
+        <li>
+          <v-layout column>
+            <v-layout>
+              <a href="http://hakkasonc.kejun.trap.show/">
+                いあい・まあい・きあい
+              </a>
+            </v-layout>
+            <v-layout>
+              traP内のハッカソンで作ったゲーム。コマンドは、いあい(攻撃)、きあい(能力上昇)、まあい(移動)の三種類。ターン制。製作時間は8時間15分+α。<br />
+              共同制作者(敬称略)<br />
+              TA:Kejun<br />
+              プログラマ:Kanagu,bonc256<br />
+              グラフィック:1mA<br />
+            </v-layout>
+          </v-layout>
+        </li>
       </ul>
     </v-layout>
   </v-container>
