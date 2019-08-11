@@ -1,5 +1,7 @@
 # portfolio
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mazrean/portfolio.svg)](https://greenkeeper.io/)
+
 ## Project setup
 ```
 npm install
